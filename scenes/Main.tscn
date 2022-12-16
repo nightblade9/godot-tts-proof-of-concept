@@ -12,6 +12,13 @@ margin_bottom = 602.0
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 1028.0
 margin_bottom = 31.0
-focus_mode = 2
 text = "Debug:
 "
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_top = 35.0
+margin_right = 1028.0
+margin_bottom = 55.0
+text = "SPEAK!"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]

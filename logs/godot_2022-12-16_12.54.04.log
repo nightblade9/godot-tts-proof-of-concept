@@ -1,0 +1,12 @@
+Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+WARNING: This godot-rust version is only compatible with Godot >= 3.5.1 and < 3.6; detected version 3.4.4-stable (official).
+GDNative mismatches may lead to subtle bugs, undefined behavior or crashes at runtime.
+Apply the 'custom-godot' feature if you want to use current godot-rust with another Godot engine version.
+   at: <unset> (src\lib.rs:273) - This godot-rust version is only compatible with Godot >= 3.5.1 and < 3.6; detected version 3.4.4-stable (official).
+GDNative mismatches may lead to subtle bugs, undefined behavior or crashes at runtime.
+Apply the 'custom-godot' feature if you want to use current godot-rust with another Godot engine version.
+Focus: Button:[Button:1245]
+   At: res://addons/godot-accessibility/Accessible.gd:589:focused()
