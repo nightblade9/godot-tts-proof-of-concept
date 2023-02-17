@@ -12,6 +12,7 @@ margin_bottom = 602.0
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 1028.0
 margin_bottom = 31.0
+focus_mode = 2
 text = "Debug:
 "
 

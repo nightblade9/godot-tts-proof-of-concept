@@ -20,17 +20,17 @@ func _init():
 		tts = Engine.get_singleton("GodotTTS")
 	else:
 		TTS = GdnsPreload
-	if TTS and (TTS.can_instance() or Engine.editor_hint):
-		tts = TTS.new()
-	if tts:
-		if not tts is JNISingleton:
-			self.add_child(tts)
-		if self.are_utterance_callbacks_supported:
-			tts.connect("utterance_begin", self, "_on_utterance_begin")
-			tts.connect("utterance_end", self, "_on_utterance_end")
-			tts.connect("utterance_stop", self, "_on_utterance_stop")
-	else:
-		print_debug("TTS not available!")
+	#if TTS and (TTS.can_instance() or Engine.editor_hint):
+	#	tts = TTS.new()
+	#if tts:
+	#	if not tts is JNISingleton:
+	#		self.add_child(tts)
+	#	if self.are_utterance_callbacks_supported:
+	#		tts.connect("utterance_begin", self, "_on_utterance_begin")
+	#		tts.connect("utterance_end", self, "_on_utterance_end")
+	#		tts.connect("utterance_stop", self, "_on_utterance_stop")
+	#else:
+	#	print_debug("TTS not available!")
 
 
 func _ready():

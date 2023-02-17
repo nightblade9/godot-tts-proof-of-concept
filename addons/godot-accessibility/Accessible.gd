@@ -588,7 +588,8 @@ func tab_container_input(event):
 func focused():
 	print_debug("Focus: %s" % node)
 	if ScreenReader.should_stop_on_focus:
-		if TTS.has_method("stop"): TTS.stop()
+		if TTS.has_method("stop"):
+			TTS.stop()
 	ScreenReader.should_stop_on_focus = true
 	if not node is Label:
 		var label = _guess_label()
